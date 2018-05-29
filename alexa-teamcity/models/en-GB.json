@@ -1,0 +1,80 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "teamcity",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "TriggerBuild",
+          "slots": [
+            {
+              "name": "buildType",
+              "type": "BuildType"
+            }
+          ],
+          "samples": [
+            "trigger {buildType}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "gopher",
+                "synonyms": ["go", "golang"]
+              }
+            }
+          ],
+          "name": "BuildType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "TriggerBuild",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "buildType",
+              "type": "BuildType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1205070696271.49903036067"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1205070696271.49903036067",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is the build type you want to run?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Which build type would you like to run?"
+          }
+        ]
+      }
+    ]
+  }
+}
