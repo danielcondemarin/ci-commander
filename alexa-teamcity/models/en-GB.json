@@ -24,7 +24,12 @@
             }
           ],
           "samples": [
-            "trigger {buildType}"
+            "trigger {buildType}",
+            "run {buildType}",
+            "start {buildType}",
+            "commence {buildType}",
+            "initiate {buildType}",
+            "begin {buildType}"
           ]
         }
       ],
@@ -72,6 +77,10 @@
           {
             "type": "PlainText",
             "value": "Which build type would you like to run?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Which build would you like to run?"
           }
         ]
       }
