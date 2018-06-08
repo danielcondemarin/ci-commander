@@ -18,9 +18,9 @@ Steps:
 *	`go build *.go`
 *	`ALEXA_APP_ID="{skill_id}" TEAMCITY_URL="http://{teamcity_host}:{port}" TEAMCITY_USER="{user}" TEAMCITY_PASS="{pwd}" ./main`
 
-## Testing it ...
+## Usage
 
-*	Add your Build configuration IDs to `types.values` in `models/en-GB.json`. You can also use synonyms for your build IDs so they are easier to pronounce etc.
+*	Add your Build configuration IDs to `types[].values[]` in `models/en-GB.json`. You can also use synonyms for your build IDs so they are easier to pronounce etc.
 *   Redeploy the skill model, `ask deploy` 
 *	`ask simulate --text "ask teamcity to trigger {myBuildType}" --locale "en-GB"` *# or simply use the Alexa Test simulator, Echoism etc.*
 
