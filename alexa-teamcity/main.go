@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	alexa "github.com/danielcondemarin/go-alexa/skillserver"
-	"github.com/danielcondemarin/go-ci-commander/env"
-	"github.com/danielcondemarin/go-ci-commander/teamcity"
+	"github.com/danielcondemarin/ci-commander/env"
+	"github.com/danielcondemarin/ci-commander/teamcity"
 )
 
 var applications = map[string]interface{}{
