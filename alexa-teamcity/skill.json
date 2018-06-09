@@ -1,4 +1,4 @@
-{
+  {
   "manifest": {
     "publishingInformation": {
       "locales": {
@@ -11,7 +11,7 @@
       "custom": {
         "endpoint": {
           "sslCertificateType": "Wildcard",
-          "uri": "https://4d2c8779.ngrok.io/echo/teamcity"
+          "uri": "https://12db3c1b.ngrok.io/echo/teamcity"
         },
         "interfaces": []
       }
